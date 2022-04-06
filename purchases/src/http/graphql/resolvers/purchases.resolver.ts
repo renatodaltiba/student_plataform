@@ -37,7 +37,7 @@ export class PurchaseResolver {
 
   @Mutation(() => Purchase)
   @UseGuards(AuthorizationGuard)
-  async createProduct(
+  async createPurchase(
     @Args('data') data: CreatePurchaseInput,
     @currentUser() user: AuthUser,
   ) {
